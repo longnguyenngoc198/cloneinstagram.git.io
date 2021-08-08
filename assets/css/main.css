@@ -1,10 +1,13 @@
+.main {
+    overflow: hidden;
+}
 .header {
     height: 54px;
     border-bottom: 1px solid var(--border-color);
 }
 
 .header__logo {
-    height: 54px;
+    height: 100%;
     display: flex;
     align-items: center;
     padding-left: 15px;
@@ -59,16 +62,17 @@ i.header__search-input-icon {
 
 .header__search-history {
     flex-direction: column;
-    width: 375px;
+    width: 100%;
     border-radius: 6px;
     background: var(--while-color);
     box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
     position: absolute;
-    left: -50%;
+    left: 0;
     top: 100%;
     display: none;
     z-index: 1;
 }   
+
 
 .header__search-history-heading {
     padding: 18px 16px 0;
@@ -95,6 +99,7 @@ i.header__search-input-icon {
     cursor: pointer;
     list-style: none;
     margin: 0;
+    width: 100%;
     height: 54px;
     display: flex;
     align-items: center;
@@ -220,7 +225,7 @@ i.header__search-input-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 17px 0 2px;
+    padding: 17px 0 16px;
     text-decoration: none;
 }
 
@@ -247,6 +252,7 @@ i.header__search-input-icon {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
+    margin: 12px 0;
 }
 .modal {
     position: absolute;
@@ -285,13 +291,16 @@ i.header__search-input-icon {
 }
 
 .footer__list {
+    width: 100%;
     list-style: none;
     padding-left: 0;
     display: flex;
     justify-content: center;
 }
 
+
 .footer__link {
+    width: 100%;
     display: block;
     text-decoration: none;
     margin: 0 8px 8px;

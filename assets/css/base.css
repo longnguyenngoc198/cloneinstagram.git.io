@@ -17,20 +17,7 @@ html {
 }
 
 /* responsite */
-.grid {
-    width: 975px;
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-.grid__full {
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .grid__row--bor {
     padding: 30px 20px 50px;
